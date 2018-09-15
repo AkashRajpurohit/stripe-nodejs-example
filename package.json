@@ -1,0 +1,17 @@
+{
+  "name": "ebookseller",
+  "version": "1.0.0",
+  "description": "App to sell eBooks",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "author": "Akash Rajpurohit <akash009.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "stripe": "^6.10.0"
+  }
+}

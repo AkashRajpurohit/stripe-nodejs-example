@@ -1,0 +1,27 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        NodeJs Ebook
+      </h1>
+      <p class="lead">Learn Nodejs front to back</p>
+      <form action="/charge" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{stripePublishableKey}}"
+          data-amount="2500" data-name="Nodejs Ebook" data-description="Ebook written by Sandro Pasquali" data-zip-code="true"
+          data-image="/img/marketplace.png" data-locale="auto">
+
+
+
+          </script>
+        <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase for $25</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img src="/img/book.jpg" alt="ebook" class="img-fluid">
+    </div>
+  </div>
+</section>
